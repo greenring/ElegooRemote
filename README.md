@@ -107,7 +107,7 @@ When you have finished recording you should have a `.conf` file in your home dir
 
     sudo nano ~/elegoo.lirc.conf
 
-If you notice that the codes are in two parts, where one is identical for each button, then manually remove the column of duplicates. For example, if you see like this in your `conf` file:
+If you notice that the codes are in two parts, where one is identical for each button, then manually remove the column of duplicates. For example, if you see like this in your `.conf` file:
 
     begin codes
         KEY_POWER                0x219E48B7 0x7E825B6C
@@ -133,6 +133,13 @@ Test that the Raspberry Pi can receive the IR code using the `irw` command.
 	irw
 
 Press a few buttons on the remote that you configured earlier. You should see output like the following:
+
+    0000000000ff02fd 00 KEY_PLAY elegoo
+    0000000000ff02fd 01 KEY_PLAY elegoo
+    0000000000ff02fd 02 KEY_PLAY elegoo
+    0000000000ffe21d 00 KEY_STOP elegoo
+    0000000000ffe21d 01 KEY_STOP elegoo
+    0000000000ffe21d 02 KEY_STOP elegoo
 
 ## Python Interface
 To use the IR remote in Python, use the [Python bindings for LIRC](https://pypi.org/project/python-lirc/) (`python3-lirc`) library.
