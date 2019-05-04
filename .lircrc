@@ -1,0 +1,11 @@
+begin
+button = KEY_VOLUMEUP
+prog = myprogram
+config = up
+end
+
+begin
+button = KEY_VOLUMEDOWN
+prog = myprogram
+config = down
+end
