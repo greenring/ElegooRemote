@@ -16,7 +16,7 @@ Install LIRC using `apt-get`.
 
 Prepare the `/etc/modules` file.
 
-    sudo nano /etc/modules file
+    sudo nano /etc/modules
 
 In this file, specify the LIRC modules and the relevant GPIO pin for the remote. In this case, the data pin of the IR receiver is connected to GPIO18 on the Raspberry Pi.
 
