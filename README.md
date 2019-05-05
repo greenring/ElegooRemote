@@ -145,6 +145,7 @@ Press a few buttons on the remote that you configured earlier. You should see ou
 To use the IR remote in Python, use the [Python bindings for LIRC](https://pypi.org/project/python-lirc/) (`python3-lirc`) library.
 
 Install `python3-lirc` using `apt-get`.
+
     sudo apt-get install python3-lirc
 
 ### Prepare LIRCRC configuration
