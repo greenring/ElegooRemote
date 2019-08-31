@@ -73,7 +73,7 @@ If all is well, then reboot the Raspberry Pi.
 
 To check that the driver is working, stop the `lircd` service and try some button presses using `mode2`.
 
-    sudo /etc/init.d/lird stop
+    sudo /etc/init.d/lircd stop
     mode2 --device=/dev/lirc0
 
 Press a few buttons on the IR remote, you should see output like the following:
